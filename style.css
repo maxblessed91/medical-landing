@@ -1,0 +1,424 @@
+@font-face {
+	font-family: 'GothaProLig';
+	src: url('./fonts/GothaProLig.eot');
+	src: local('☺'), url('fonts/GothaProLig.woff') format('woff'), url('./fonts/GothaProLig.ttf') format('truetype'), url('./fonts/GothaProLig.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'GothaProReg';
+	src: url('./fonts/GothaProReg.eot');
+	src: local('☺'), url('fonts/GothaProReg.woff') format('woff'), url('./fonts/GothaProReg.ttf') format('truetype'), url('./fonts/GothaProReg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+/* h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
+/*--------------------*/
+
+.page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.page__screen {
+}
+
+.screen {
+  flex: 1 0 100%;
+}
+
+.screen__content {
+  position: relative;
+  z-index: 2;
+}
+
+.screen2__title {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 300px;
+  left: 270px;
+  width: 550px;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-family: 'GothaProReg';
+  line-height: normal;
+}
+
+.screen__title {
+  padding-left: 57px;
+  padding-top: 115px;
+  font-size: 52px;
+  color: #0d319c;
+  max-width: 850px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: 'GothaProReg';
+}
+
+.screen3__title {
+  color: aliceblue;
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: 'GothaProReg';
+}
+
+.screen__body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.screen__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.screen__image img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.arrow {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.screen__peak1 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 277px;
+  left: 575px;
+  background: #f78b1f;
+  animation: pulse 1800ms infinite;
+}
+
+.screen__peak1-1 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 277px;
+  left: 575px;
+  background: #f78b1f;
+  animation: pulse 1800ms 500ms infinite;
+}
+
+.screen__peak__title1 {
+  color: #0d319c;
+  position: absolute;
+  top: 282px;
+  left: 610px;
+  font-family: 'GothaProLig';
+}
+
+.screen__peak2 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 428px;
+  left: 274px;
+  background: #f78b1f;
+  animation: pulse 1800ms infinite;
+}
+
+.screen__peak2-1 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 428px;
+  left: 274px;
+  background: #f78b1f;
+  animation: pulse 1800ms 500ms infinite;
+}
+
+.screen__peak__title2 {
+  color: #0d319c;
+  position: absolute;
+  top: 398px;
+  left: 229px;
+  font-family: 'GothaProLig';
+}
+
+.screen__peak3 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 513px;
+  left: 816px;
+  background: #f78b1f;
+  animation: pulse 1800ms infinite;
+}
+
+.screen__peak3-1 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 513px;
+  left: 816px;
+  background: #f78b1f;
+  animation: pulse 1800ms 500ms infinite;
+}
+
+.screen__peak__title3 {
+  color: #0d319c;
+  position: absolute;
+  top: 483px;
+  left: 795px;
+  font-family: 'GothaProLig';
+}
+
+.screen__peak4 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 533px;
+  left: 474px;
+  background: #f78b1f;
+  animation: pulse 1800ms infinite;
+}
+
+.screen__peak4-1 {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 533px;
+  left: 474px;
+  background: #f78b1f;
+  animation: pulse 1800ms 500ms infinite;
+}
+
+.screen__peak__title4 {
+  color: #0d319c;
+  position: absolute;
+  top: 503px;
+  left: 397px;
+  font-family: 'GothaProLig';
+}
+
+.scroll-description {
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 694px;
+  left: 460px;
+  letter-spacing: 0.5px;
+  font-family: 'GothaProLig';
+}
+
+.ice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 576px;
+  margin: 0px auto;
+  max-width: 900px;
+}
+
+.swiper-pagination-v {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translate(0px, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.page__bullet {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 3px 0;
+  border-radius: 50%;
+  transition: background-color 0.3s ease 0s;
+}
+
+.page__bullet_active {
+  background-color: #f78b1f;
+}
+
+.swiper-scrollbar {
+  height: 45px;
+  max-width: 630px;
+  margin: 0 60px 70px 180px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.year2016 {
+    color: white;
+    font-family: 'GothaProReg';
+    font-size: 18px;
+    position: absolute;
+    top: 730px;
+    left: 178px;
+}
+
+.year2009 {
+    color: white;
+    font-family: 'GothaProReg';
+    font-size: 18px;
+    position: absolute;
+    top: 730px;
+    left: 478px;
+}
+
+.year1998 {
+    color: white;
+    font-family: 'GothaProReg';
+    font-size: 18px;
+    position: absolute;
+    top: 730px;
+    left: 798px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 768px) {
+  .screen__image img {
+    max-width: 100%;
+    /* max-height: 100%; */
+  }
+  .ice {
+    max-height: 576px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .screen__image img {
+    object-fit: fill;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .ice {
+    max-height: 876px;
+    max-width: 100%;
+  }
+}
